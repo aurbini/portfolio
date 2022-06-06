@@ -4,8 +4,19 @@ body {
 }
 #navbar {
   height: 100px;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 300ms ease;
+  z-index: 10;
+}
+.scroll-nav {
+  background-color: #2e3e4e;
 }
 .header {
+  padding-top: 100px;
   background: url('./images/banner.jpg') no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,6 +28,9 @@ body {
 }
 .title {
   color: white;
+}
+.carousel {
+  top: 25%;
 }
 .header-top {
   padding-top: 3em;
@@ -96,6 +110,7 @@ h2 {
   min-height: 300px;
   background-size: cover;
   height: 100%;
+  border-radius: 15px;
 }
 .woodstock-img {
   background-image: url('./images/woodstock.png');
@@ -149,6 +164,7 @@ a:hover {
   opacity: 0;
   transition: 0.5s ease;
   background-color: #008cba;
+  border-radius: 15px;
 }
 .text {
   color: white;
