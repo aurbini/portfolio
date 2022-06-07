@@ -161,7 +161,6 @@
             </div>
         </div>
     </div>   
-    </div>
     <div class="services-section d-flex align-items-center id="services">
         <div class="container col-sm-12 col-lg-6"> 
         <div class="text-center ">
@@ -180,17 +179,31 @@
     </div>
     </div>
     </div>
-    <div class="footer-section" >
-        <a id="contact" ></a>
-        <div class="container"> 
-        <div class="contact-header">
-            <h3> Contact</h3>
-            <p>Please give me a call or email if you have any questions</p>
-            <p>845-901-0418</p>
-            <p>aurbini92@gmail.com</p>
+    <div class="footer-section container-fluid" >
+        <div class="row w-100">
+            <div class="col d-flex justify-content-center">
+                <h1 class="contact-header border-bottom pt-20 mb-10 ml-3 page-header mt-4 text-center w-95" style="color:#ef664d; font-family: 'Arvo';">Contact</h1>
+            </div>
         </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 col-sm-12">
+                <form id="javascript_form w-100">
+                    <div class="form-group mt-4 mb-4">
+                        
+                        <input class="form-control" type="text" name="subject" placeholder="Subject" />
+                    </div>
+                    <div class="form-group mb-4">
+                        <textarea class="form-control" rows="5" name="text" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-4" id="js_send" value="Send" >Submit</button>
+                    
+                    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+                </form>
+            </div>
+        </div>
+ 
     </div>
-    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -203,7 +216,7 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <script src="scripts.js" ></script>
-</body>
-</body>
+    <script src="email-script.js" ></script>
 
+</body>
 </html>

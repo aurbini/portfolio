@@ -201,6 +201,9 @@ a:hover {
 .contact-header p {
   color: white;
 }
+.contact-header {
+  width: 95%;
+}
 /* 
 #footer {
     background-color: #666666;
