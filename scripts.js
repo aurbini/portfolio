@@ -3,7 +3,7 @@ navbar = document.getElementById('navbar');
 window.addEventListener('scroll', function () {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop > lastScrollTop) {
-    navbar.style.top = '-80px';
+    navbar.style.top = '-90px';
     navbar.classList.remove('scroll-nav');
   } else {
     navbar.style.top = '0';

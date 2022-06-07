@@ -204,6 +204,14 @@ a:hover {
 .contact-header {
   width: 95%;
 }
+@media screen and (max-width: 767px) {
+  .works {
+    height: 100%;
+  }
+  #navbar {
+    height: 150px;
+  }
+}
 /* 
 #footer {
     background-color: #666666;
