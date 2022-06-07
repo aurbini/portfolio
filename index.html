@@ -187,14 +187,24 @@
         </div>
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-lg-6 col-sm-12">
-                <form id="javascript_form w-100">
+                <form id="javascript_form" class="w-100">
                     <div class="form-group mt-4 mb-4">
                         
-                        <input class="form-control" type="text" name="subject" placeholder="Subject" />
+                        <input class="form-control" type="text" name="subject" placeholder="Subject" id="subject" />
                     </div>
                     <div class="form-group mb-4">
-                        <textarea class="form-control" rows="5" name="text" placeholder="Message"></textarea>
+                        <textarea class="form-control" rows="5" name="text" placeholder="Message" id="text"></textarea>
                     </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-6 col-sm-12">
+                            <input class="form-control" type="text" name="extra_email" placeholder="Email" id="email" />
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <input class="form-control" type="number" name="extra_phone" placeholder="Phone" id="phone" />
+
+                        </div>
+                    </div>
+                    
                     <button type="submit" class="btn btn-primary mb-4" id="js_send" value="Send" >Submit</button>
                     
                     <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->

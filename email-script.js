@@ -31,14 +31,20 @@ function js_send() {
     }
   };
 
-  var subject = document.querySelector(
-    '#' + form_id_js + " [name='subject']"
-  ).value;
+  var subject = document.querySelector('#subject').value;
   var message = document.querySelector(
     '#' + form_id_js + " [name='text']"
   ).value;
+  var email = document.querySelector(
+    '#' + form_id_js + " [name='extra_email']"
+  ).value;
+  var phone = document.querySelector(
+    '#' + form_id_js + " [name='extra_phone']"
+  ).value;
   data_js['subject'] = subject;
   data_js['text'] = message;
+  data_js['extra_email'] = email;
+  data_js['extra_phone'] = phone;
   var params = toParams(data_js);
 
   request.open('POST', 'https://postmail.invotes.com/send', true);
@@ -62,7 +68,7 @@ function toParams(data_js) {
   return form_data.join('&');
 }
 
-var js_form = document.getElementById(form_id_js);
+var js_form = document.getElementById('javascript_form');
 js_form.addEventListener('submit', function (e) {
   e.preventDefault();
 });
