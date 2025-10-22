@@ -186,19 +186,19 @@
                   <i class="fab fa-github me-2"></i>GitHub
                 </a>
                 <a
-                  href="https://www.linkedin.com/mynetwork/?trk=onboarding-landing"
+                  href="https://www.linkedin.com/in/aurbini/"
                   class="btn btn-outline-primary me-3"
                   target="_blank"
                 >
                   <i class="fab fa-linkedin me-2"></i>LinkedIn
                 </a>
-                <a
-                  href="https://docs.google.com/document/d/1q8gzQy2GtioNfxJt_yVsLoqn4YAdftty/edit?usp=sharing&ouid=116289327714726141740&rtpof=true&sd=true"
+                <button
                   class="btn btn-outline-success"
-                  target="_blank"
+                  data-bs-toggle="modal"
+                  data-bs-target="#resumeModal"
                 >
-                  <i class="fas fa-file-pdf me-2"></i>Resume
-                </a>
+                  <i class="fas fa-file-alt me-2"></i>View Resume
+                </button>
               </div>
             </div>
           </div>
@@ -468,7 +468,7 @@
                 <i class="fab fa-github fa-lg"></i>
               </a>
               <a
-                href="https://www.linkedin.com/mynetwork/?trk=onboarding-landing"
+                href="https://www.linkedin.com/in/aurbini/"
                 class="text-light me-3"
                 target="_blank"
               >
@@ -482,6 +482,137 @@
         </div>
       </div>
     </footer>
+
+    <!-- Resume Modal -->
+    <div
+      class="modal fade"
+      id="resumeModal"
+      tabindex="-1"
+      aria-labelledby="resumeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="resumeModalLabel">
+              Alex Urbini - Resume
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="resume-viewer">
+              <div class="resume-content">
+                <div class="resume-header text-center mb-4">
+                  <h2 class="resume-name">Alex Urbini</h2>
+                  <p class="resume-title">Full Stack Web Developer</p>
+                  <div class="resume-contact">
+                    <p>
+                      <i class="fas fa-envelope me-2"></i>aurbini92@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-2"></i>(845) 901-0418</p>
+                    <p>
+                      <i class="fas fa-map-marker-alt me-2"></i>New York, NY
+                    </p>
+                    <p><i class="fab fa-github me-2"></i>github.com/aurbini</p>
+                    <p>
+                      <i class="fab fa-linkedin me-2"></i
+                      >linkedin.com/in/alex-urbini
+                    </p>
+                  </div>
+                </div>
+
+                <div class="resume-section">
+                  <h3 class="section-header">Professional Summary</h3>
+                  <p>
+                    Creative Full Stack Web Developer with a passion for using
+                    the newest technologies and building apps with dynamic data.
+                    Adept at working independently or collaborating with a team
+                    and sharing code through GitHub. Brings experience with
+                    debugging, designing, and developing meaningful user
+                    experiences.
+                  </p>
+                </div>
+
+                <div class="resume-section">
+                  <h3 class="section-header">Technical Skills</h3>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul class="skills-list">
+                        <li>
+                          <i class="fab fa-js-square text-warning me-2"></i
+                          >JavaScript
+                        </li>
+                        <li>
+                          <i class="fab fa-react text-info me-2"></i>React
+                        </li>
+                        <li>
+                          <i class="fab fa-node-js text-success me-2"></i
+                          >Node.js
+                        </li>
+                        <li>
+                          <i class="fab fa-html5 text-danger me-2"></i>HTML5
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="skills-list">
+                        <li>
+                          <i class="fab fa-css3-alt text-primary me-2"></i>CSS3
+                        </li>
+                        <li>
+                          <i class="fab fa-git-alt text-secondary me-2"></i>Git
+                        </li>
+                        <li><i class="fas fa-database me-2"></i>MongoDB</li>
+                        <li><i class="fas fa-server me-2"></i>Express.js</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="resume-section">
+                  <h3 class="section-header">Education</h3>
+                  <div class="education-item">
+                    <h4>Columbia University</h4>
+                    <p class="education-details">
+                      Full Stack Web Development Bootcamp
+                    </p>
+                    <p class="education-date">2022</p>
+                  </div>
+                </div>
+
+                <div class="resume-section">
+                  <h3 class="section-header">Experience</h3>
+                  <div class="experience-item">
+                    <h4>Full Stack Web Developer</h4>
+                    <p class="experience-details">
+                      2+ years of experience building modern web applications
+                      using JavaScript, React, and Node.js. Experience working
+                      with teams using Git version control and collaborative
+                      development practices.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="resume-actions mt-4 text-center">
+                  <a
+                    href="assets/resume.docx"
+                    class="btn btn-outline-primary"
+                    download="Alex_Urbini_Resume.docx"
+                  >
+                    <i class="fas fa-download me-2"></i>Download PDF Version
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script
